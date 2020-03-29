@@ -124,7 +124,7 @@
 
       function divImg(num, classe) {
         const result = $('.slick-center').attr('data-slick-index') - num;
-        const numImg = result == -3 ? 6 : result;
+        const numImg = result == -3 ? 6 : result == 1 ? 10 : result;
         $('.slick-slide').removeClass(classe);
         $('.slick-slide[data-slick-index="' + numImg + '"]').addClass(classe);
       }
